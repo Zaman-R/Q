@@ -1,0 +1,61 @@
+.consultation-card__row {
+  display: flex;
+  align-items: center;
+}
+
+.consultation-card__col + .consultation-card__col {
+  margin-left: 1.2em;
+}
+
+.consultation-card {
+  margin-top: 2em;
+  padding: 2em 1em;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow effect */
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.consultation-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 8px rgba(30, 140, 235, 0.2); /* Box shadow effect */
+}
+
+.consultation-card__img {
+  height: 50px;
+}
+
+.consultation-card__text__title {
+  font-size: 1rem;
+}
+
+.consultation-card__text__desc {
+  margin-top: 0.5em;
+  font-weight: 300;
+}
+
+@media screen and (min-width: 600px) {
+  .consultation-card__row {
+    flex-direction: column;
+  }
+  .consultation-card__col + .consultation-card__col {
+    margin-left: 0;
+    margin-top: 1.2em;
+  }
+  .consultation-card__texts {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1070px) {
+  .consultation-card__row {
+    flex-direction: row;
+  }
+  .consultation-card__col + .consultation-card__col {
+    margin-left: 1.2em;
+    margin-top: 0;
+  }
+  .consultation-card__texts {
+    text-align: left;
+  }
+}

@@ -1,0 +1,65 @@
+:root {
+  --primary-clr: #1e8ceb;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.select-doctors__wrapper {
+  width: 90%;
+  max-width: 75rem;
+  margin: 2em auto;
+  font-size: 1rem;
+}
+
+.selectors-container + .selectors-container {
+  margin-top: 0.8em;
+}
+
+.select-label {
+  font-weight: 600;
+}
+
+.custom-select,
+.doctor-search {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+  padding: 0.6em;
+  width: 90%;
+}
+
+.doctor-search,
+.custom-select {
+  margin: 0.5em 0;
+}
+
+.custom-select:focus {
+  border: 2px solid rgba(30, 140, 235, 0.7);
+  box-shadow: 0 0 4px rgba(30, 140, 235, 0.5);
+}
+
+.doctor-cards {
+  margin-top: 1.5em;
+}
+
+@media screen and (min-width: 600px) {
+  .select-doctors__wrapper {
+    font-size: 1.2rem;
+  }
+  .custom-select,
+  .doctor-search {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .select-doctors__wrapper {
+    font-size: 1.4rem;
+  }
+  .custom-select,
+  .doctor-search {
+    font-size: 1rem;
+  }
+}

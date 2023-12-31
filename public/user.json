@@ -1,0 +1,14 @@
+[
+    {
+        "email": "asdf@gmail.com",
+        "password": "123@",
+        "isAdmin": false,
+        "isDoctor": false
+    },
+    {
+        "email": "gg@gmail.com",
+        "password": "123@",
+        "isAdmin": true,
+        "isDoctor": false
+    }
+]

@@ -1,0 +1,119 @@
+.doctor-card__wrapper {
+  font-size: 0.8rem;
+  margin-top: 1em;
+  border-radius: 5px;
+  padding-top: 1em;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Box shadow effect */
+  transition: transform 0.2s ease-in-out;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.doctor-card__wrapper:hover {
+  transform: scale(1.03);
+  border: 1px solid rgba(30, 140, 235, 0.4);
+  box-shadow: 0 0 4px rgba(30, 140, 235, 0.4);
+}
+
+.doctor-card__name {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.doctor-card__label {
+  opacity: 0.5;
+}
+
+.doctor-card__fee__vat {
+  opacity: 0.6;
+}
+
+.doctor-fee {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.doctor-card__hospital-name,
+.doctor-card__total-experience {
+  font-weight: 600;
+}
+
+.p-lr {
+  padding: 0 1em;
+}
+
+.doctor-card__fee {
+  background-color: #f5f5f5;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  transition: 0.3s;
+}
+
+.doctor-card__col:nth-child(2) {
+  margin-top: 1em;
+}
+
+.doctor-card__fee:hover {
+  background-color: #c7f9cc;
+}
+
+.doctor-card__fee__col + .doctor-card__fee__col {
+  margin-left: 1em;
+}
+
+.right-arrow-icon {
+  height: 25px;
+}
+
+/* Responsiveness  */
+
+@media screen and (min-width: 600px) {
+  .doctor-card__wrapper {
+    font-size: 0.9rem;
+    padding-top: 0;
+    text-align: left;
+  }
+
+  .doctor-card__name {
+    font-size: 1.1rem;
+  }
+
+  .doctor-fee {
+    font-size: 1.4rem;
+  }
+
+  .doctor-card__col:nth-child(2) {
+    margin-top: 0;
+  }
+
+  .doctor-card__fee {
+    margin-top: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 5px;
+    /* min-height: 160px; */
+  }
+
+  .doctor-card__row {
+    display: flex;
+    align-items: stretch; /* USED THIS TO MATCH ALL THE COLUMNS HEIGHT IN A ROW */
+    justify-content: center;
+  }
+
+  .doctor-card__col {
+    width: 33.33%;
+    flex: 1;
+  }
+
+  .p-lr {
+    padding: 1em;
+  }
+}

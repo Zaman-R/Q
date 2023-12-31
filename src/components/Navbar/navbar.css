@@ -1,0 +1,115 @@
+:root {
+  --clr-primary: #1e8ceb;
+}
+
+.navbar {
+  margin: 0 auto;
+  display: flex;
+  width: 90%;
+  max-width: 75rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 0;
+}
+
+.mobile__navbar {
+  padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile__navbar > ul,
+.navbar > ul {
+  list-style: none;
+  padding: 0;
+}
+
+.navbar > ul {
+  display: flex;
+}
+
+.mobile__navbar > ul > li,
+.navbar > ul > li {
+  cursor: pointer;
+}
+
+.mobile__navbar > ul > li > a,
+.navbar > ul > li > a {
+  text-decoration: none;
+  color: #000;
+}
+
+.navbar > ul > li + li {
+  margin-left: 2em;
+}
+
+.mobile__signin-button,
+.mobile__navbar__right-items,
+.mobile__navbar > ul > li + li {
+  margin-top: 0.5em;
+}
+
+.nav-item,
+.signin-button {
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.mobile__nav-item,
+.mobile__signin-button {
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+.mobile__nav-item {
+  text-align: center;
+}
+
+.nav-icons {
+  height: 20px;
+  cursor: pointer;
+}
+
+.mobile__navbar__right-items,
+.navbar__right-items {
+  display: flex;
+  align-items: center;
+}
+
+.nav-icons + .nav-icons {
+  margin-left: 1em;
+}
+
+.nav-icons:last-child {
+  height: 35px;
+}
+
+.signin-button,
+.mobile__signin-button {
+  text-decoration: none;
+  color: #000;
+  border-radius: 50px;
+  border: 2px solid var(--clr-primary);
+  padding: 0.3em 1.5em;
+}
+
+.menu-icon {
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .navbar__right-items {
+    display: none;
+  }
+
+  .navbar > ul {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}

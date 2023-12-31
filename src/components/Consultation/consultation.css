@@ -1,0 +1,26 @@
+.consultation__wrapper {
+  width: 90%;
+  max-width: 75rem;
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
+
+.consultation__title {
+  font-size: 1.3rem;
+  margin-top: 1.2em;
+}
+
+@media screen and (min-width: 600px) {
+  .consultation-row {
+    display: flex;
+  }
+
+  .consultation-col {
+    display: flex;
+    flex: 1;
+  }
+
+  .consultation-col + .consultation-col {
+    margin-left: 1.2em;
+  }
+}
